@@ -41,6 +41,9 @@ nav{
     display: none;
     cursor: pointer;
 }
+.nav__closeMenu{
+    display: none;
+ }
 
 .nav__icons i{
     font-size: 2rem;
@@ -60,22 +63,22 @@ nav{
 
  @media (max-width: 800px){
      .nav__mainMenu{
-         height: 100vh;
-         position: fixed;
-         top: 0;
-         right: 0;
-         left: 0;
-         z-index: 10;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         color: #000;
-         transition: top 1s ease;
-         display: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
      }
      .nav__closeMenu{
-         display: block;
-         position: absolute;
+        display: block;
+        position: absolute;
         top: 20px;
         right: 20px;
      }
