@@ -42,3 +42,51 @@ nav{
     cursor: pointer;
 }
 
+.nav__icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover{color: rgb(0, 110, 245)}
+.fa-twitter:hover{color: rgb(147, 184, 46)}
+.fa-github:hover{color: rgb(20, 103, 117)}
+.fa-instagram:hover{color: rgb(0, 245, 94)}
+
+.nav__logo{
+    margin: 6px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+ @media (max-width: 800px){
+     .nav__mainMenu{
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         right: 0;
+         left: 0;
+         z-index: 10;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         color: #000;
+         transition: top 1s ease;
+         display: none;
+     }
+     .nav__closeMenu{
+         display: block;
+         position: absolute;
+        top: 20px;
+        right: 20px;
+     }
+     .nav__openMenu{display: block}
+     .nav__mainMenu li a:hover{
+         background: none;
+         color: rgb(255, 123, 0);
+         font-size: 1.6rem;
+     }
+     .nav__icons i {
+         display: inline-block;
+         padding: 12px;
+     }
+ }
